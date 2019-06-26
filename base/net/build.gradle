@@ -1,0 +1,8 @@
+apply from: rootProject.file('lib-config.gradle')
+
+dependencies {
+    api rootProject.ext.dependencies.retrofit2
+    api rootProject.ext.dependencies.retrofit2_adapter_rxjava2
+    api rootProject.ext.dependencies.okhttp3
+    api rootProject.ext.dependencies.okhttp3_logging_interceptor
+}

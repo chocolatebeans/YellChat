@@ -1,0 +1,2 @@
+include ':app', ':core', ':base:net', ':core:chat',
+        ':base:util', ':base:arch', ':base:livedatabus'
