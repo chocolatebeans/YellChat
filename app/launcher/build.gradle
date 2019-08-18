@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(":core:user:pkg")
+    implementation project(":core:chat:pkg")
+}

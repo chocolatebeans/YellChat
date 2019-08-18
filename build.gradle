@@ -1,16 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+GLog.d("${project.toString()} -> root")
+
 buildscript {
-    apply from: "config.gradle"
+    apply from: "dependencies.gradle"
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.ext.version.kotlin_version}"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${Config.kotlin_version}"
     }
 }
 
@@ -18,7 +18,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 

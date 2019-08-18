@@ -1,5 +1,3 @@
-apply from: rootProject.file('lib-config.gradle')
-
 dependencies {
     api rootProject.ext.dependencies.rxjava2
     api rootProject.ext.dependencies.rxandroid

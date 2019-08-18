@@ -1,0 +1,6 @@
+dependencies {
+    api rootProject.ext.dependencies.kotlin
+    api rootProject.ext.dependencies.androidx_appcompat
+    api rootProject.ext.dependencies.androidx_core_ktx
+    api rootProject.ext.dependencies.constraintlayout
+}

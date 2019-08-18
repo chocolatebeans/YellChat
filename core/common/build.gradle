@@ -1,0 +1,7 @@
+dependencies {
+    api project(":base:util")
+    api project(":base:arch")
+    api project(":base:net")
+    api project(":base:widget")
+    api project(":base:livedatabus")
+}

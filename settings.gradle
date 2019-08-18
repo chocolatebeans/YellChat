@@ -1,2 +1,3 @@
-include ':app', ':core', ':base:net', ':core:chat',
-        ':base:util', ':base:arch', ':base:livedatabus'
+GLog.d("setttings.gradle")
+
+ConfigUtil.addBuildListener(gradle)
