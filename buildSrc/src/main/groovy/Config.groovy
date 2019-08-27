@@ -11,13 +11,17 @@ class Config {
     static kotlin_version = '1.3.41'
 
     //app 运行模块配置, git 提交只包含 app
-    static appConfig = ['app', 'user']
+    static appConfig = ['app', 'user', 'chat']
     //pkg 依赖功能包配置
-    static pkgConfig = ['user']
+    static pkgConfig = ['user', 'chat']
     static depConfig = [
             plugin : [
                     gradle : new DepConfig("com.android.tools.build:gradle:3.4.1"),
                     kotlin : new DepConfig("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+            ],
+
+            app  : [
+                    launcher : new DepConfig(":app:launcher")
             ],
 
             core : [

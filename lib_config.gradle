@@ -31,4 +31,12 @@ dependencies {
     testImplementation rootProject.ext.dependencies.junit
     androidTestImplementation rootProject.ext.dependencies.runner
     androidTestImplementation rootProject.ext.dependencies.espresso_core
+
+    if (project.name == 'pkg' || project.name == 'mock') {
+        for (def entrySet : ConfigUtil.getApplyExports().entrySet()) {
+            api entrySet.value.dep
+        }
+    } else if (project.name == 'export') {
+        api Config.depConfig.core.common.dep
+    }
 }

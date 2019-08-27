@@ -1,7 +1,2 @@
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 dependencies {
-    api project(":core:chat:pkg")
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
